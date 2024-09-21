@@ -78,7 +78,7 @@ section {
     display: flex;
     align-items: center;
     padding: 0 9%;
-     background: url("https://media.istockphoto.com/id/939210078/photo/black-and-white-portrait-of-indian-businessman-smiling.jpg?s=2048x2048&w=is&k=20&c=1f5AG99WHXaNjZEuq9HvKHFNmIKaeSYfD42Dn6uapHs=") no-repeat; 
+     background: url("@assets/images/protfolio.jpg") no-repeat; 
     background-size: cover;
     background-position: center;
 
@@ -605,7 +605,6 @@ span{
     gap: 20px;
   }
   #projects {
-
     background: var(--second-bg-color);
     color: var(--text-color);
     padding: 3rem;
@@ -617,12 +616,10 @@ span{
   
   .section-header {
     margin-top: 164px;
-
     margin-bottom: 2rem;
   }
   
   .section-header h2 {
-
     font-size: 2rem;
     font-weight: bold;
     text-align: center;
@@ -637,7 +634,8 @@ span{
   }
   
   .project-card {
-    height: 323px;
+    flex: 1 1 300px; /* Allow cards to grow and shrink with a base size */
+    max-width: 400px; /* Set a maximum width */
     perspective: 1200px;
     transition: transform 0.6s;
     position: relative;
@@ -667,8 +665,9 @@ span{
   }
   
   .project-image img {
-    width: 600px;
-    aspect-ratio: 3/2;
+    width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+    aspect-ratio: 3/2; /* Maintain aspect ratio */
     object-fit: cover;
   }
   
@@ -711,7 +710,7 @@ span{
   
   .technologies li {
     background: var(--text-color);
-    color:#081b29;
+    color: #081b29;
     padding: 0.5rem 1rem;
     border-radius: 20px;
     font-size: 1rem;
@@ -722,3 +721,161 @@ span{
     opacity: 0.8; /* Adjust the opacity as desired */
   }
   
+  /* Media Queries */
+  @media (max-width: 768px) {
+    .section-header {
+      margin-top: 100px;
+    }
+  
+    .project-info h3 {
+      font-size: 1.5rem;
+    }
+  
+    .project-info p {
+      font-size: 0.9rem;
+    }
+  
+    .technologies li {
+      font-size: 0.9rem;
+    }
+  }
+  
+  
+  @media (max-width:1200px){
+    html{
+        font-size: 55%;
+    }
+
+  }
+
+
+  @media (max-width: 768px) {
+    .header {
+        position: fixed !important;
+       
+    }
+}
+
+  @media (max-width:991px){
+    .header{
+        padding: 2rem 4%;
+    }
+    section{
+
+        padding:10rem 4% 2rem
+    }
+    .home{
+        padding: 0 4%;
+    }
+    .footer{
+        padding: 2rem 4%;
+    }
+
+  }
+
+  @media (max-width:768px){
+    .header{
+        background: var(--bg-color);
+    }
+    #menu-icon{
+        display: block;
+    }
+    .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 4%;
+        background: var(--bg-color);
+        box-shadow: 0 .5rem 1rem  rgba(0, 0, 0, 0.2);
+        z-index: 1;
+
+        transition: left 0.25s ease, opacity 0.25s ease;
+        transition-delay: 0.25s; /* Delay when hiding */
+        left: -100%;
+        opacity: 0;
+    }
+    .navbar a{
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
+
+    .header {
+        position: relative;
+        width: 100%;
+      }
+      
+      /* Style for the navbar when active */
+      .navbar.active {
+        left: 0;
+        opacity: 1;
+        transition: left 0.25s ease, opacity 0.25s ease;
+        transition-delay: 0s; /* No delay when becoming active */
+      }
+
+      .navbar .active-nav{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-top: .1rem solid rgba(0, 0, 0, 0.2);
+        z-index: 1;
+
+      }
+
+      .header {
+        position: relative;
+        width: 100%;
+      }
+      
+      /* Style for the navbar when active */
+      .navbar.active {
+        left: 0;
+        opacity: 1;
+        transition: left 0.5s ease, opacity 0.5s ease;
+      }
+      
+      .navbar {
+        position: absolute;
+        top: 100%;
+        left: -100%;  /* Hidden by default */
+        width: 100%;
+        padding: 1rem 4%;
+        background: var(--bg-color);
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+        opacity: 0;  /* Hidden by default */
+        z-index: 10;
+        transition: left 0.5s ease, opacity 0.5s ease;
+      }
+      
+      .navbar a {
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+      }
+      
+    
+      
+     
+  }
+
+  @media (max-width:520px){
+    html{
+        font-size: 50%;
+  }
+
+  .home-content h1 {
+    display: flex;
+    flex-direction: column;
+  }
+  .home-sci{
+    width: 160px;
+  }
+
+  .home-sci a{
+    width: 38px;
+    height: 38px;
+  }
+}

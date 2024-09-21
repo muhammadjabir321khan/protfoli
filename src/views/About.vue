@@ -2,7 +2,7 @@
  <section class="about" id="about">
     <h2 class="heading">About  <span>Me</span></h2>
     <div class="about-image">
-        <img src="https://media.istockphoto.com/id/939210078/photo/black-and-white-portrait-of-indian-businessman-smiling.jpg?s=2048x2048&w=is&k=20&c=1f5AG99WHXaNjZEuq9HvKHFNmIKaeSYfD42Dn6uapHs=" alt="">
+        <img src="@assets/images/protfolio.jpg" alt="">
         <span class="circle-spin"></span>
     </div>
     <div class="about-content">

@@ -12,8 +12,8 @@
                 </div>
                 <div class="education-content">
                     <h3>Master's Degree</h3>
-                    <span>University of XYZ</span>
-                    <p class="date">2019 - 2021</p>
+                    <span>Abdul Wali Khan University Mardan (AWKUM)</span>
+                    <p class="date">2018 - 2022</p>
                     <p>Master of Science in Computer Science. Graduated with honors.</p>
                 </div>
             </div>
@@ -23,8 +23,8 @@
                 </div>
                 <div class="education-content">
                     <h3>Bachelor's Degree</h3>
-                    <span>College of ABC</span>
-                    <p class="date">2015 - 2019</p>
+                    <span>GDC Takht Bhai Mardan</span>
+                    <p class="date">2015 - 2016</p>
                     <p>Bachelor of Technology in Information Technology. Dean's list for all semesters.</p>
                 </div>
             </div>
@@ -34,8 +34,8 @@
                 </div>
                 <div class="education-content">
                     <h3>High School</h3>
-                    <span>School of DEF</span>
-                    <p class="date">2013 - 2015</p>
+                    <span>GHS Takht Bhai </span>
+                    <p class="date">2010 - 2014</p>
                     <p>High School Diploma. Valedictorian of the graduating class.</p>
                 </div>
             </div>
@@ -47,8 +47,8 @@
                 </div>
                 <div class="education-content">
                     <h3>Middle School</h3>
-                    <span>Middle School of GHI</span>
-                    <p class="date">2009 - 2013</p>
+                    <span>GHS Takht Bhai</span>
+                    <p class="date">2010 - 2014</p>
                     <p>Graduated with honors. Active participant in various extracurricular activities.</p>
                 </div>
             </div>
@@ -58,7 +58,7 @@
                 </div>
                 <div class="education-content">
                     <h3>Primary School</h3>
-                    <span>Primary School of JKL</span>
+                    <span>GPS Takht Bhai </span>
                     <p class="date">2005 - 2009</p>
                     <p>Completed primary education with excellent grades. Involved in school events and activities.</p>
                 </div>
@@ -70,8 +70,34 @@
 
 
 
-
 </template>
+
+<style scoped>
+
+
+@media (max-width:945px){
+    .education-card {
+    min-width: 64rem;
+}
+    
+}
+@media (max-width:575px){
+    .education-card {
+    min-width: 55rem;
+}
+
+}
+@media (max-width:520px){
+ .education .heading {
+    font-size: 4rem;
+  
+}
+.education-card {
+    min-width: 52rem;
+}
+
+}
+</style>
 
 
 

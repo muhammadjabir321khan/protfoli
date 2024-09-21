@@ -11,15 +11,15 @@
           distinctio numquam quis nesciunt hic necessitatibus quidem earum?
         </p>
         <div class="btn-box">
-          <a href="" class="btn"> Hire Me</a>
-          <a href="" class="btn">Let's Talk</a>
+          <a href="#" class="btn"> Hire Me</a>
+          <a href="https://wa.me/3149974426" class="btn">Let's Talk</a>
         </div>
       
     </div>
     <div class="home-sci">
-      <a href=""> <i class='bx bxl-facebook'></i></a>
-      <a href=""> <i class='bx bxl-twitter'></i></a>
-      <a href=""> <i class='bx bxl-linkedin'></i></a>
+      <a href="https://facebook.com/muhammadjibran.khan.357"> <i class='bx bxl-facebook'></i></a>
+      <a href="https://www.instagram.com/muhammadjibran.khan.357?igsh=YzljYTk1ODg3Zg=="> <i class='bx bxl-instagram'></i></a>
+      <a href="https://linkedin.com/in/muhammad-jabir-356169245"> <i class='bx bxl-linkedin'></i></a>
     </div>
     <div class="home-imageHover"></div>
 
