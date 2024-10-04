@@ -4,7 +4,6 @@ import { fileURLToPath, URL } from 'node:url';
 
 export default defineConfig({
     base: "/protfoli/",
-
   plugins: [vue()],
   resolve: {
     alias: {
